@@ -1,0 +1,20 @@
+</html>
+  <body ng-app="angularStudentApp" ng-controller="StudentsCtrl">
+    <table class="table table-striped" border="3">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>DOB</th>
+          <th>Class</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr ng-repeat="student in students">
+          <td>{{student.field_student_name}}</td>
+          <td>{{student.field_dob}}</td>
+          <td>{{student.field_class}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
