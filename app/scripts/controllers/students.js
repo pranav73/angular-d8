@@ -12,7 +12,7 @@ angular
   .controller('StudentsCtrl', function ($scope, $rootScope, $http) {
     $rootScope.activeNav = 'students';
     $scope.students = [];
-    $http.get($rootScope.baseUrl + '/student').success(function(result) {
+    $http.get($rootScope.baseUrl + '/student?_format=json').success(function(result) {
       console.log(result);
       $scope.students = result;
     });
