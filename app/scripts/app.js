@@ -14,7 +14,7 @@ angular
     'ngRoute',
   ])
   .run(function($rootScope) {
-    $rootScope.baseUrl = "http://local.drops-8.com";
+    $rootScope.baseUrl = "http://headless-angular.local/";
   })
   .config(function ($routeProvider) {
     $routeProvider
